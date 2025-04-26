@@ -20,19 +20,25 @@
   background-color: #2196f3;
   color: white;
   border: none;
-  padding: 12px 24px;
+  padding: 8px 16px;  /* Reduced padding */
   border-radius: 4px;
   font-weight: 400;
-  font-size: 0.95rem;
+  font-size: 0.85rem;  /* Reduced font size */
   text-transform: uppercase;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.6px;  /* Reduced letter spacing */
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 3px 5px rgba(33, 150, 243, 0.3);
+  box-shadow: 0 2px 4px rgba(33, 150, 243, 0.3);  /* Reduced shadow */
   position: relative;
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .get-in-touch {
+    padding: 6px 14px;  /* Even smaller for mobile */
+    font-size: 0.8rem;
+  }
+}
 .get-in-touch:hover {
   background-color: #1976d2;
   box-shadow: 0 6px 10px rgba(33, 150, 243, 0.4);
@@ -63,13 +69,6 @@
   opacity: 1;
   transform: translate(-50%, -50%) scale(0);
   transition: transform 0s;
-}
-
-@media (max-width: 768px) {
-  .get-in-touch {
-    padding: 10px 20px;
-    font-size: 0.85rem;
-  }
 }
 .logo {
   display: flex;
