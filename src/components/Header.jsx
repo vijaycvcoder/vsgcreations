@@ -24,7 +24,6 @@ const Header = () => {
           <ul>
             <li><a onClick={() => scrollToSection('#about')} href="#about">Home</a></li>
             <li><a onClick={() => scrollToSection('#services')} href="#services">Services</a></li>
-            <li><a onClick={() => scrollToSection('#portfolio')} href="#portfolio">Portfolio</a></li>
           </ul>
         </nav>
         <button className="get-in-touch" onClick={() => setShowPopup(true)}>

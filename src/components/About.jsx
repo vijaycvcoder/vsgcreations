@@ -1,9 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PortfolioPopup from './PortfolioPopup';
 import './About.css';
 
 const About = () => {
+  const [selectedPopup, setSelectedPopup] = useState(null);
+
+  const serviceItems = [
+    {
+      title: "Website Development",
+      icon: "fas fa-paint-brush",
+      content: "Building responsive and modern websites that showcase your brand. Our custom web solutions combine stunning design with seamless functionality to create an engaging online presence.",
+      portfolioImages: [
+        "/images/web1.jpg",
+        "/images/web2.jpg",
+        "/images/web3.jpg"
+      ]
+    },
+    {
+      title: "Poster Design",
+      icon: "fas fa-object-group",
+      content: "Crafting eye-catching posters that command attention and deliver your message with impact. We blend artistic excellence with marketing principles to create designs that drive engagement.",
+      portfolioImages: [
+        "/images/poster1.jpg",
+        "/images/poster2.jpg",
+        "/images/poster3.jpg"
+      ]
+    },
+    {
+      title: "Content Creation",
+      icon: "fas fa-pen-fancy",
+      content: "Delivering compelling visual content that tells your story across all platforms. From social media graphics to marketing materials, we create content that resonates with your audience.",
+      portfolioImages: [
+        "/images/content1.jpg",
+        "/images/content2.jpg",
+        "/images/content3.jpg"
+      ]
+    }
+  ];
+
   return (
-    <section id="about" className="about-section">
+    <section className="about-section">
       <div className="about-container">
         <h2 className="section-title">VSG Creations</h2>
         <div className="about-content">
@@ -13,44 +49,32 @@ const About = () => {
               that leave lasting impressions.
             </p>
             <div className="services-grid">
-              <div className="service-card">
-                <div className="service-icon">
-                  <i className="fas fa-paint-brush"></i>
+              {serviceItems.map((service, index) => (
+                <div 
+                  key={index} 
+                  className="service-card"
+                  onClick={() => setSelectedPopup(service)}
+                >
+                  <div className="service-icon">
+                    <i className={service.icon}></i>
+                  </div>
+                  <h3>{service.title}</h3>
+                  <p>{service.content}</p>
+                  <button className="view-portfolio-btn">
+                    View Portfolio
+                  </button>
                 </div>
-                <h3>Website Development</h3>
-                <p>
-                  Building responsive and modern websites that showcase your brand. 
-                  Our custom web solutions combine stunning design with seamless 
-                  functionality to create an engaging online presence.
-                </p>
-                </div>
-              <div className="service-card">
-                <div className="service-icon">
-                  <i className="fas fa-object-group"></i>
-                </div>
-                <h3>Poster Design</h3>
-                <p>
-                  Crafting eye-catching posters that command attention and deliver 
-                  your message with impact. We blend artistic excellence with 
-                  marketing principles to create designs that drive engagement.
-                </p>
-              </div>
-
-              <div className="service-card">
-                <div className="service-icon">
-                  <i className="fas fa-pen-fancy"></i>
-                </div>
-                <h3>Content Creation</h3>
-                <p>
-                  Delivering compelling visual content that tells your story across 
-                  all platforms. From social media graphics to marketing materials, 
-                  we create content that resonates with your audience.
-                </p>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
+
+      <PortfolioPopup
+        isOpen={selectedPopup !== null}
+        onClose={() => setSelectedPopup(null)}
+        {...selectedPopup}
+      />
     </section>
   );
 };
