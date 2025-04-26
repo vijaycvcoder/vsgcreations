@@ -1,0 +1,138 @@
+.services-section {
+  padding: 100px 0;
+  background-color: #f8f9fa;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 4rem;
+  font-size: 1.1rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pricing-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.professional {
+  border: 2px solid #2196f3;
+}
+
+.popular-tag {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #2196f3;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pricing-header h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 2.5rem;
+  color: #2196f3;
+  font-weight: bold;
+}
+
+.currency {
+  font-size: 1.5rem;
+  vertical-align: super;
+}
+
+.pricing-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-features li {
+  padding: 0.8rem 0;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pricing-features i {
+  color: #2196f3;
+  font-size: 0.9rem;
+}
+
+.pricing-button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #2196f3;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-button:hover {
+  background-color: #1976d2;
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .pricing-card {
+    margin: 0 1rem;
+  }
+}
