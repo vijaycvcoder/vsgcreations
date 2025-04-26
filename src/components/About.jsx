@@ -17,14 +17,13 @@ const About = () => {
                 <div className="service-icon">
                   <i className="fas fa-paint-brush"></i>
                 </div>
-                <h3>Logo Design</h3>
+                <h3>Website Development</h3>
                 <p>
-                  Creating distinctive brand identities through innovative logo designs 
-                  that capture your brand's essence and values. Our logos combine 
-                  creativity with strategic thinking to ensure memorable brand recognition.
+                  Building responsive and modern websites that showcase your brand. 
+                  Our custom web solutions combine stunning design with seamless 
+                  functionality to create an engaging online presence.
                 </p>
-              </div>
-
+                </div>
               <div className="service-card">
                 <div className="service-icon">
                   <i className="fas fa-object-group"></i>
