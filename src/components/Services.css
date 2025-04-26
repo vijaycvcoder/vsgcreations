@@ -117,9 +117,9 @@
 }
 
 .pricing-button {
-  width: 100%;
+  width: 80%;
   padding: 1rem;
-  margin-top: 2rem;
+  margin: 2rem auto 0;
   border: none;
   border-radius: 5px;
   background-color: #2196f3;
@@ -127,10 +127,26 @@
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .pricing-button:hover {
   background-color: #1976d2;
+  text-decoration: none;
+  color: white;
 }
 
 @media (max-width: 768px) {

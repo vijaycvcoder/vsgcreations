@@ -26,7 +26,10 @@ const Services = () => {
                 <li><i className="fas fa-check"></i> 5 Days Delivery</li>
               </ul>
             </div>
-            <button className="pricing-button">Get Started</button>
+            <a href="https://forms.gle/4GiaVee8pK6VcxtP6"
+                target="_blank"
+                rel="noopener noreferrer"
+               className="pricing-button">Get Started</a>
           </div>
 
           <div className="pricing-card professional">
@@ -48,7 +51,10 @@ const Services = () => {
                 <li><i className="fas fa-check"></i> 3 Days Delivery</li>
               </ul>
             </div>
-            <button className="pricing-button">Get Started</button>
+            <a href="https://forms.gle/4GiaVee8pK6VcxtP6"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="pricing-button">Get Started</a>
           </div>
 
           <div className="pricing-card premium">
@@ -71,7 +77,10 @@ const Services = () => {
                 <li><i className="fas fa-check"></i> 48 Hours Delivery</li>
               </ul>
             </div>
-            <button className="pricing-button">Get Started</button>
+            <a href="https://forms.gle/4GiaVee8pK6VcxtP6"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="pricing-button">Get Started</a>
           </div>
         </div>
       </div>
