@@ -79,7 +79,22 @@
 
 .currency {
   font-size: 1.5rem;
-  vertical-align: super;
+  vertical-align: top;
+  position: relative;
+  top: 8px;
+  margin-right: 2px;
+}
+
+.amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.price {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2px;
 }
 
 .pricing-features ul {

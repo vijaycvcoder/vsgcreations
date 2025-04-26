@@ -14,7 +14,7 @@ const Services = () => {
               <h3>Basic</h3>
               <div className="price">
                 <span className="currency">₹</span>
-                <span className="amount">4,999</span>
+                <span className="amount">999</span>
               </div>
             </div>
             <div className="pricing-features">
@@ -35,7 +35,7 @@ const Services = () => {
               <h3>Professional</h3>
               <div className="price">
                 <span className="currency">₹</span>
-                <span className="amount">9,999</span>
+                <span className="amount">2,999</span>
               </div>
             </div>
             <div className="pricing-features">
@@ -56,7 +56,7 @@ const Services = () => {
               <h3>Premium</h3>
               <div className="price">
                 <span className="currency">₹</span>
-                <span className="amount">19,999</span>
+                <span className="amount">9,999</span>
               </div>
             </div>
             <div className="pricing-features">
